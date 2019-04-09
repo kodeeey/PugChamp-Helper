@@ -5,7 +5,7 @@
 const colorSelected = "#4caf50";
 const colorUnselected = "#9E9E9E";
 let regionButtonMap = {};
-
+let settings;
 
 //load stylesheet
 style = document.createElement("link");
@@ -28,24 +28,19 @@ window.onload = function () {
   let btnRegionNA = document.getElementById('btnRegionNA');
   let btnRegionAU = document.getElementById('btnRegionAU');
 
-  let captains_amount_tablerow = document.getElementById('captains_amount');
-  let players_amount_tablerow = document.getElementById('players_amount');
-  let roles_ready_tablerow = document.getElementById('roles_ready');
-  let servers_ready_tablerow = document.getElementById('servers_ready');
-  let draft_ready_tablerow = document.getElementById('draft_ready');
-
   regionButtonMap = {"eu": btnRegionEU, "na": btnRegionNA, "au": btnRegionAU};
   let regionButtons = [btnRegionAU, btnRegionEU, btnRegionNA];
 
-  let settings = getSettings();
+  getSettings();
 
   //functions to manipulate region buttons
   //Remove selection class from all buttons
   function clearSelection() {
-    for (i = 0; i < regionButtons.length; i++) {
+    for (let i = 0; i < regionButtons.length; i++) {
       unselectButton(regionButtons[i]);
     }
   }
+
   function unselectButton(button) {
     if (button.classList.contains('selected')) {
       button.classList.remove('selected');

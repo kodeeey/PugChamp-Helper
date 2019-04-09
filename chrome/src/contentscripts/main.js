@@ -10,7 +10,7 @@ chrome.storage.sync.get(["colors", "querystrings", "settings"], function(result)
   querystrings = result.querystrings;
   let draftTables = document.getElementsByClassName(querystrings.draftTables);
   let queueTables = document.getElementsByClassName(querystrings.queueTables);
-  let queue = document.getElementsByClassName(querystrings.queue);
+
   if (settings.divTags) document.addEventListener("loaded", function(event) {
     let style = document.createElement("link");
     style.rel = "stylesheet";
@@ -70,7 +70,7 @@ function updateTable(elements) {
   port.onMessage.addListener(function(msg) {
     for (let i = 0; i < elements.length; i++) {
       elementID = elements[i].children[1].firstElementChild.getAttribute("href").substring(8);
-      if (elementID != null && elementID != undefined) {
+      if (elementID != null) {
         if (msg.user.id == elementID) {
           if (msg.user.registered) {
             updateUser(elements[i], msg.user.data.division, msg.user.data.etf2lID)
