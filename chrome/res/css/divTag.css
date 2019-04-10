@@ -1,17 +1,17 @@
-.etf2lDivTag{
-  color: black;
-  text-decoration: none;
-  background-color: white;
-  display: inline;
-  height: 14px;
-  width: 32px;
-  padding: 0.15em 4px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 15px;
-  text-align: center;
-  border-radius: 2px;
-  box-shadow: inset 0 -1px 0 rgba(30,30,30,0.1);
-  font-family: 'Roboto', 'Noto', sans-serif;
-  position: relative;
+.etf2lDivTag {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    display: inline;
+    height: 14px;
+    width: 32px;
+    padding: 0.15em 4px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: inset 0 -1px 0 rgba(30, 30, 30, 0.1);
+    font-family: 'Roboto', 'Noto', sans-serif;
+    position: relative;
 }

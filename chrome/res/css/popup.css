@@ -1,87 +1,87 @@
 :root {
-  --pugchamp-orange: #e1b813;
-  --pugchamp-purple: #554562;
-  --pugchamp-black: #2a2624;
+    --pugchamp-orange: #e1b813;
+    --pugchamp-purple: #554562;
+    --pugchamp-black: #2a2624;
 }
 
 body {
     background-color: var(--pugchamp-black);
     color: white;
-    min-width:300px;
+    min-width: 300px;
 }
 
 #info {
-  background-color: #444;
-  border: 0;
-  color: #bbb;
-  display: block;
-  font-size: 85%;
-  line-height: 1.2;
-  margin: 0;
-  padding: calc(0.1em + 1px) 0;
-  position: relative;
-  text-align: center;
-  width: 100%;
-	margin-bottom: 1em;
+    background-color: #444;
+    border: 0;
+    color: #bbb;
+    display: block;
+    font-size: 85%;
+    line-height: 1.2;
+    margin: 0;
+    padding: calc(0.1em + 1px) 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
 }
 
 
 .button {
-  background-color: var(--pugchamp-purple);
-  border-radius: 4px;
-  font-weight: 600;
-	float: left;
-	min-width: 132px;
-	max-width: 250px;
-	margin: 8px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	padding: 1em 2em;
-	border: none;
+    background-color: var(--pugchamp-purple);
+    border-radius: 4px;
+    font-weight: 600;
+    float: left;
+    min-width: 132px;
+    max-width: 250px;
+    margin: 8px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 1em 2em;
+    border: none;
 }
 
 /* Button when it's clicked on */
 .button:focus {
-  color: var(--pugchamp-orange);
-  outline: none; /*remove ugly blue outline*/
+    color: var(--pugchamp-orange);
+    outline: none; /*remove ugly blue outline*/
 }
 
 .outline {
-  min-width: 40px;
-  margin: 3px;
-  padding: 10px;
+    min-width: 40px;
+    margin: 3px;
+    padding: 10px;
 }
 
 .selected {
-  color: var(--pugchamp-orange);
+    color: var(--pugchamp-orange);
 }
 
 .low_break {
-  line-height: 80%;
+    line-height: 80%;
 }
 
 
 .table_text {
-  margin-top: 6px;
+    margin-top: 6px;
 }
 
 /* Images */
 .img-wrap {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  display: inline-block;
-  color: var(--pugchamp-orange);
-  overflow: hidden;
-  margin: 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+    color: var(--pugchamp-orange);
+    overflow: hidden;
+    margin: 0;
 }
 
 div > img {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-height: 100%;
-  min-width: 100%;
-  transform: translate(-50%, -50%);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
 }
